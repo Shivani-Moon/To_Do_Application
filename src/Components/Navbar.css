@@ -1,0 +1,15 @@
+#nav-id{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 34rem;
+    font-size: larger;
+    background-color: #464E47;
+}
+#logo{
+    height: 80px;
+    width: 90px;
+}
+#list-name{
+    color: white;
+}
