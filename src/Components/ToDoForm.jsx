@@ -32,7 +32,7 @@ const ToDoForm = () => {
 
       <h3 className="text-center mt-5">Create New To Do</h3>
       <form onSubmit={handleSubmit} className="card shadow-sm mb-4" id="form">
-        <div className="card-body" id="card">
+        <div className="card-body">
           <h5 className="card-title mb-3">Add a Task</h5>
           <div className="mb-3">
             <label className="form-label">Task Name</label>
