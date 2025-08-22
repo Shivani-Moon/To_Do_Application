@@ -1,9 +1,10 @@
 #nav-id{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 34rem;
+    justify-content: space-between;
     font-size: larger;
+    height: 80px;
+    padding: 0 20px;
     background-color: #464E47;
 }
 #logo{
@@ -12,4 +13,21 @@
 }
 #list-name{
     color: white;
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px){
+    #nav-id{
+        height: auto;
+    }
+    .navbar-toggler{
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 599px) and (min-width: 200px){
+    #nav-id{
+        height: auto;
+        
+    }
+    
 }

@@ -1,0 +1,81 @@
+.todo-container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background: #f5f8fa;
+  min-height: 100vh;
+}
+
+.todo-header {
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  max-width: 250px;
+  border-radius: 10px;
+  border: 1px solid #b2dfdb;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0,121,107,0.2);
+  border-color: #00796b;
+}
+
+.filter-btn {
+  border-radius: 10px;
+  padding: 8px 15px;
+  background: linear-gradient(135deg, #26a69a, #00796b);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #00796b, #004d40);
+}
+
+
+.todo-card {
+  width: 100%;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #ffffff;
+}
+
+.todo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+
+.todo-card.complete {
+  border-left: 6px solid #28a745;
+}
+
+.todo-card.incomplete {
+  border-left: 6px solid #f0ad4e;
+}
+
+
+.priority-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.priority-badge.high { background: #ff5252; color: #fff; }
+.priority-badge.medium { background: #ffc107; color: #fff; }
+.priority-badge.low { background: #4caf50; color: #fff; }
+
+.btn-sm {
+  font-size: 0.8rem;
+  padding: 5px 10px;
+}
